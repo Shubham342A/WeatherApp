@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="_24_c">24°C</string>
+    <string name="min_temp">Min Temp.</string>
+    <string name="max_temp">Max Temp.</string>
+    <string name="clear_sky">Clear Sky</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="_05_30_am">05:30 AM</string>
+    <string name="_05_30_am2">05:30 AM</string>
+    <string name="wind">Wind</string>
+    <string name="_05_30_am3">05:30 AM</string>
+    <string name="pressure">Pressure</string>
+    <string name="_05_30_am4">05:30 AM</string>
+    <string name="_05_30_am5">05:30 AM</string>
+    <string name="humidiy">Humidiy</string>
+    <string name="updated_at">Updated at</string>
+    <string name="location">LOCATION📌</string>
+    <string name="created_by">Created By</string>
+    <string name="hell">Hell</string>
+    <string name="t_t_t_t_t_t_tshit_n_network_gone">\t\t\t\t\t\t\tShit! \n Network Gone</string>
+    <string name="info">info</string>
+</resources>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/First"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textSize="24sp"
+                android:textColor="@color/white">
+            </TextView>
+
+            <TextView
+                android:id="@+id/update"
+                android:text="@string/updated_at"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/third"
+               android:layout_centerInParent="true"
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/sky"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="21sp"
+                   android:text="@string/clear_sky"
+                   android:layout_gravity="center"
+                   android:textColor="@color/white">
+
+               </TextView>
+               <TextView
+                   android:id="@+id/temp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="sans-serif-thin"
+                   android:text="@string/_24_c"
+                   android:textColor="@color/white"
+                   android:textSize="90sp">
+
+               </TextView>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/min_temp"
+                       android:text="@string/min_temp"
+                       android:textColor="@color/white"
+
+                       >
+
+                   </TextView>
+                   <Space
+                       android:layout_width="50dp"
+                       android:layout_height="wrap_content">
+                   </Space>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/max_temp"
+                        android:text="@string/max_temp"
+                        android:textColor="@color/white">
+                    </TextView>
+
+               </LinearLayout>
+
+           </LinearLayout>
+               <LinearLayout
+                   android:id="@+id/detailcontain"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_alignParentBottom="true">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:weightSum="3">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:background="#9b6354"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/sunrise"
+                                android:contentDescription="@string/sunrise"
+                                app:tint="#FFBF00">
+
+                            </ImageView>
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="5dp">
+                                
+                            </Space>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sunrise"
+                                android:textSize="15sp"
+                                android:textColor="#FFEB3B">
+                            </TextView>
+                             <TextView
+                                 android:id="@+id/sunrise"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:textSize="10sp"
+                                 android:textColor="@color/white"
+                                 android:text="@string/_05_30_am">
+
+                             </TextView>
+
+                        </LinearLayout>
+                         <Space
+                             android:layout_width="10dp"
+                             android:layout_height="wrap_content">
+
+                         </Space>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:padding="8dp"
+                           android:background="#9b6354"
+                           android:orientation="vertical"
+                           >
+
+                           <ImageView
+                               android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:src="@drawable/sunset"
+                               android:contentDescription="@string/sunset"
+                               app:tint="#FFAA2C">
+                           </ImageView>
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="5dp">
+
+                           </Space>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/sunset"
+                               android:textSize="15sp"
+                               android:textColor="#FFEB3B">
+                           </TextView>
+                           <TextView
+                               android:id="@+id/sunset"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="10sp"
+                               android:textColor="@color/white"
+                               android:text="@string/_05_30_am2">
+
+                           </TextView>
+
+                       </LinearLayout>
+                       <Space
+                           android:layout_width="10dp"
+                           android:layout_height="wrap_content">
+
+                       </Space>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:padding="8dp"
+                           android:background="#9b6354"
+                           android:orientation="vertical"
+                           >
+
+                           <ImageView
+                               android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:src="@drawable/wind"
+                               android:contentDescription="@string/wind"
+                               app:tint="#FFBF00">
+                           </ImageView>
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="5dp">
+
+                           </Space>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/wind"
+                               android:textSize="15sp"
+                               android:textColor="#FFEB3B">
+                           </TextView>
+                           <TextView
+                               android:id="@+id/wind"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="10sp"
+                               android:textColor="@color/white"
+                               android:text="@string/_05_30_am3">
+
+                           </TextView>
+
+                       </LinearLayout>
+                       <Space
+                           android:layout_width="10dp"
+                           android:layout_height="wrap_content">
+
+                       </Space>
+
+
+                   </LinearLayout>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"></Space>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       android:weightSum="3">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:padding="8dp"
+                           android:background="#9b6354"
+                           android:orientation="vertical"
+                           >
+
+                           <ImageView
+                               android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:src="@drawable/pressure"
+                               android:contentDescription="@string/pressure"
+                               app:tint="#FFBF00">
+                           </ImageView>
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="5dp">
+
+                           </Space>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/pressure"
+                               android:textSize="15sp"
+                               android:textColor="#FFEB3B">
+                           </TextView>
+                           <TextView
+                               android:id="@+id/pressure"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="10sp"
+                               android:textColor="@color/white"
+                               android:text="@string/_05_30_am4">
+
+                           </TextView>
+
+                       </LinearLayout>
+                       <Space
+                           android:layout_width="10dp"
+                           android:layout_height="wrap_content">
+
+                       </Space>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:padding="8dp"
+                           android:background="#9b6354"
+                           android:orientation="vertical"
+                           >
+
+                           <ImageView
+                               android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:contentDescription="@string/humidiy"
+                               android:src="@drawable/humidity"
+                               app:tint="?android:attr/colorFocusedHighlight">
+                           </ImageView>
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="5dp">
+
+                           </Space>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/humidiy"
+                               android:textSize="15sp"
+                               android:textColor="#FFEB3B">
+                           </TextView>
+                           <TextView
+                               android:id="@+id/humidity"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="10sp"
+                               android:textColor="@color/white"
+                               android:text="@string/_05_30_am5">
+
+                           </TextView>
+
+                       </LinearLayout>
+                       <Space
+                           android:layout_width="10dp"
+                           android:layout_height="wrap_content">
+
+                       </Space>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="81dp"
+                           android:layout_weight="1"
+                           android:gravity="center"
+                           android:padding="8dp"
+                           android:background="#9b6354"
+                           android:orientation="vertical"
+                           >
+
+                           <ImageView
+                               android:layout_width="25dp"
+                               android:layout_height="25dp"
+                               android:src="@drawable/info"
+                               android:contentDescription="@string/info"
+                               app:tint="#FFBF00" />
+                           <Space
+                               android:layout_width="wrap_content"
+                               android:layout_height="5dp">
+
+                           </Space>
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/created_by"
+                               android:textSize="15sp"
+                               android:textColor="#FFEB3B">
+                           </TextView>
+                           <TextView
+                               android:id="@+id/info"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textSize="15sp"
+                               android:textColor="@color/white"
+                               android:text="@string/hell">
+
+                           </TextView>
+
+                       </LinearLayout>
+                       <Space
+                           android:layout_width="10dp"
+                           android:layout_height="wrap_content">
+
+                       </Space>
+
+
+                   </LinearLayout>
+                   <Space
+                       android:layout_width="wrap_content"
+                       android:layout_height="12dp"></Space>
+
+               </LinearLayout>
+
+     </RelativeLayout>
+       <ProgressBar
+           android:id="@+id/loader"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:foregroundGravity="center">
+
+       </ProgressBar>
+       <TextView
+           android:id="@+id/errorText"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:text="@string/t_t_t_t_t_t_tshit_n_network_gone"
+           android:textSize="24sp"
+           android:visibility="gone"
+
+           >
+
+       </TextView>
+
+</RelativeLayout>
